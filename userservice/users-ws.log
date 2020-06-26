@@ -1,0 +1,288 @@
+2020-06-21 15:34:56.553  INFO [users-ws,,,] 60351 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8012
+2020-06-21 15:34:58.723  INFO [users-ws,,,] 60351 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=configserver, profiles=[default], label=null, version=fbe52567b47fc7eb5e2a1a6772099fdbc970bf02, state=null
+2020-06-21 15:34:58.724  INFO [users-ws,,,] 60351 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/pratyushranjansahu/springdemo/application.properties'}]
+2020-06-21 15:34:58.803  INFO [users-ws,,,] 60351 --- [main] c.p.userservice.UserserviceApplication   : No active profile set, falling back to default profiles: default
+2020-06-21 15:34:59.970  INFO [users-ws,,,] 60351 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-21 15:35:00.037  INFO [users-ws,,,] 60351 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61ms. Found 1 JPA repository interfaces.
+2020-06-21 15:35:00.169  WARN [users-ws,,,] 60351 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-06-21 15:35:00.268  WARN [users-ws,,,] 60351 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-06-21 15:35:00.471  INFO [users-ws,,,] 60351 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3c6c8c78-3074-3dc3-bc2d-9446a1607e2d
+2020-06-21 15:35:01.276  INFO [users-ws,,,] 60351 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-06-21 15:35:01.283  INFO [users-ws,,,] 60351 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-21 15:35:01.283  INFO [users-ws,,,] 60351 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-21 15:35:01.361  INFO [users-ws,,,] 60351 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-21 15:35:01.362  INFO [users-ws,,,] 60351 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2539 ms
+2020-06-21 15:35:01.511  WARN [users-ws,,,] 60351 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-06-21 15:35:01.511  INFO [users-ws,,,] 60351 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-06-21 15:35:01.519  INFO [users-ws,,,] 60351 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@21390938
+2020-06-21 15:35:01.601  INFO [users-ws,,,] 60351 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-21 15:35:01.719  INFO [users-ws,,,] 60351 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-21 15:35:01.724  INFO [users-ws,,,] 60351 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:970f4490-9351-43af-adf4-9f3ccdbd43ba'
+2020-06-21 15:35:02.088  WARN [users-ws,,,] 60351 --- [main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@749baa0c] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)}]
+2020-06-21 15:35:02.885  INFO [users-ws,,,] 60351 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-21 15:35:02.957  INFO [users-ws,,,] 60351 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-21 15:35:03.017  INFO [users-ws,,,] 60351 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-06-21 15:35:03.212  WARN [users-ws,,,] 60351 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-21 15:35:03.257  INFO [users-ws,,,] 60351 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-21 15:35:03.327  INFO [users-ws,,,] 60351 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-06-21 15:35:03.357  INFO [users-ws,,,] 60351 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-06-21 15:35:03.942  INFO [users-ws,,,] 60351 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-21 15:35:03.948  INFO [users-ws,,,] 60351 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-21 15:35:04.388  INFO [users-ws,,,] 60351 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-06-21 15:35:04.670  INFO [users-ws,,,] 60351 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5abb7a8f, org.springframework.security.web.context.SecurityContextPersistenceFilter@7dd7ec56, org.springframework.security.web.header.HeaderWriterFilter@3bda1f0, org.springframework.security.web.authentication.logout.LogoutFilter@30c03473, com.pratyushapps.userservice.security.AuthenticationFilter@6684589a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3149409c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@713e49c3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5621a671, org.springframework.security.web.session.SessionManagementFilter@11ce9319, org.springframework.security.web.access.ExceptionTranslationFilter@3dd66ff5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1af82ba8]
+2020-06-21 15:35:04.709  WARN [users-ws,,,] 60351 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-06-21 15:35:04.709  INFO [users-ws,,,] 60351 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-06-21 15:35:05.548  WARN [users-ws,,,] 60351 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-06-21 15:35:05.748  INFO [users-ws,,,] 60351 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2020-06-21 15:35:05.886  INFO [users-ws,,,] 60351 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 44977 (http) with context path ''
+2020-06-21 15:35:05.887  INFO [users-ws,,,] 60351 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 44977
+2020-06-21 15:35:05.892  INFO [users-ws,,,] 60351 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-06-21 15:35:05.926  INFO [users-ws,,,] 60351 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-06-21 15:35:06.073  INFO [users-ws,,,] 60351 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-06-21 15:35:06.074  INFO [users-ws,,,] 60351 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-06-21 15:35:06.175  INFO [users-ws,,,] 60351 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-06-21 15:35:06.175  INFO [users-ws,,,] 60351 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-06-21 15:35:06.336  INFO [users-ws,,,] 60351 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 15:35:06.353  INFO [users-ws,,,] 60351 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-06-21 15:35:06.353  INFO [users-ws,,,] 60351 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-06-21 15:35:06.353  INFO [users-ws,,,] 60351 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-06-21 15:35:06.353  INFO [users-ws,,,] 60351 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-06-21 15:35:06.353  INFO [users-ws,,,] 60351 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-06-21 15:35:06.353  INFO [users-ws,,,] 60351 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-06-21 15:35:06.354  INFO [users-ws,,,] 60351 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-06-21 15:35:06.572  INFO [users-ws,,,] 60351 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-06-21 15:35:06.575  INFO [users-ws,,,] 60351 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-06-21 15:35:06.606  INFO [users-ws,,,] 60351 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-06-21 15:35:06.612  INFO [users-ws,,,] 60351 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1592733906611 with initial instances count: 1
+2020-06-21 15:35:06.621  INFO [users-ws,,,] 60351 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USERS-WS with eureka with status UP
+2020-06-21 15:35:06.621  INFO [users-ws,,,] 60351 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1592733906621, current=UP, previous=STARTING]
+2020-06-21 15:35:06.623  INFO [users-ws,,,] 60351 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:c360c9cd3f3653e8bbd59399f8c4f37b: registering service...
+2020-06-21 15:35:06.652  INFO [users-ws,,,] 60351 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:c360c9cd3f3653e8bbd59399f8c4f37b - registration status: 204
+2020-06-21 15:35:06.691  INFO [users-ws,,,] 60351 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-06-21 15:35:06.692  INFO [users-ws,,,] 60351 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-06-21 15:35:06.728  INFO [users-ws,,,] 60351 --- [main] c.p.userservice.UserserviceApplication   : Started UserserviceApplication in 11.648 seconds (JVM running for 12.766)
+2020-06-21 15:35:08.268  INFO [users-ws,,,] 60351 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-21 15:35:08.268  INFO [users-ws,,,] 60351 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-21 15:35:08.281  INFO [users-ws,,,] 60351 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-06-21 15:35:49.678  WARN [users-ws,,,] 60351 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@749baa0c}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2020-06-21 15:35:49.685  WARN [users-ws,,,] 60351 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@749baa0c}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 1 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused))
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:641) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:142) ~[spring-cloud-sleuth-zipkin-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:132) ~[spring-cloud-sleuth-zipkin-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.21.1.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299) ~[zipkin-reporter-2.15.0.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378) [zipkin-reporter-2.15.0.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_252]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_252]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_252]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_252]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_252]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_252]
+	at java.net.Socket.connect(Socket.java:607) ~[na:1.8.0_252]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[na:1.8.0_252]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_252]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_252]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_252]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_252]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_252]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1226) ~[na:1.8.0_252]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162) ~[na:1.8.0_252]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056) ~[na:1.8.0_252]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990) ~[na:1.8.0_252]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:739) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 9 common frames omitted
+
+2020-06-21 15:38:01.036  INFO [users-ws,,,] 60351 --- [RMI TCP Connection(4)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2020-06-21 15:38:01.039  INFO [users-ws,,,] 60351 --- [RMI TCP Connection(4)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application USERS-WS with eureka with status DOWN
+2020-06-21 15:38:01.039  WARN [users-ws,,,] 60351 --- [RMI TCP Connection(4)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1592734081039, current=DOWN, previous=UP]
+2020-06-21 15:38:01.040  INFO [users-ws,,,] 60351 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:c360c9cd3f3653e8bbd59399f8c4f37b: registering service...
+2020-06-21 15:38:01.047  INFO [users-ws,,,] 60351 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:c360c9cd3f3653e8bbd59399f8c4f37b - registration status: 204
+2020-06-21 15:38:01.050  INFO [users-ws,,,] 60351 --- [RMI TCP Connection(4)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-06-21 15:38:01.053  INFO [users-ws,,,] 60351 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2020-06-21 15:38:01.056  WARN [users-ws,,,] 60351 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-06-21 15:38:01.057  WARN [users-ws,,,] 60351 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [RxIoScheduler-1 (Evictor)] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-06-21 15:38:01.058  WARN [users-ws,,,] 60351 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+2020-06-21 15:38:01.058  WARN [users-ws,,,] 60351 --- [RMI TCP Connection(4)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@749baa0c}] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ zipkin2.reporter.ByteBoundedQueue.drainTo(ByteBoundedQueue.java:81)
+ zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:270)
+ zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378)
+ java.lang.Thread.run(Thread.java:748)
+2020-06-21 15:38:01.075  INFO [users-ws,,,] 60351 --- [RMI TCP Connection(4)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-06-21 15:38:01.075  INFO [users-ws,,,] 60351 --- [RMI TCP Connection(4)-127.0.0.1] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2020-06-21 15:38:01.081  INFO [users-ws,,,] 60351 --- [RMI TCP Connection(4)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-21 15:38:01.734  INFO [users-ws,,,] 60351 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-06-21 15:38:01.748  INFO [users-ws,,,] 60351 --- [RMI TCP Connection(4)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-06-21 15:38:01.752  INFO [users-ws,,,] 60351 --- [RMI TCP Connection(4)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2020-06-21 15:38:04.756  INFO [users-ws,,,] 60351 --- [RMI TCP Connection(4)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2020-06-21 15:38:04.774  INFO [users-ws,,,] 60351 --- [RMI TCP Connection(4)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:c360c9cd3f3653e8bbd59399f8c4f37b - deregister  status: 200
+2020-06-21 15:38:04.798  INFO [users-ws,,,] 60351 --- [RMI TCP Connection(4)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2020-06-21 15:38:20.938  INFO [users-ws,,,] 61222 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:8012
+2020-06-21 15:38:22.928  INFO [users-ws,,,] 61222 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=configserver, profiles=[default], label=null, version=fbe52567b47fc7eb5e2a1a6772099fdbc970bf02, state=null
+2020-06-21 15:38:22.930  INFO [users-ws,,,] 61222 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-https://github.com/pratyushranjansahu/springdemo/application.properties'}]
+2020-06-21 15:38:22.971  INFO [users-ws,,,] 61222 --- [main] c.p.userservice.UserserviceApplication   : No active profile set, falling back to default profiles: default
+2020-06-21 15:38:24.547  INFO [users-ws,,,] 61222 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-06-21 15:38:24.636  INFO [users-ws,,,] 61222 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80ms. Found 1 JPA repository interfaces.
+2020-06-21 15:38:24.782  WARN [users-ws,,,] 61222 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-06-21 15:38:24.895  WARN [users-ws,,,] 61222 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-06-21 15:38:31.747  INFO [users-ws,,,] 61222 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3c6c8c78-3074-3dc3-bc2d-9446a1607e2d
+2020-06-21 15:38:32.690  INFO [users-ws,,,] 61222 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 0 (http)
+2020-06-21 15:38:32.700  INFO [users-ws,,,] 61222 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-06-21 15:38:32.700  INFO [users-ws,,,] 61222 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-06-21 15:38:32.800  INFO [users-ws,,,] 61222 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-06-21 15:38:32.800  INFO [users-ws,,,] 61222 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 9807 ms
+2020-06-21 15:38:33.002  WARN [users-ws,,,] 61222 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-06-21 15:38:33.002  INFO [users-ws,,,] 61222 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-06-21 15:38:33.016  INFO [users-ws,,,] 61222 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@16ccd2bc
+2020-06-21 15:38:33.126  INFO [users-ws,,,] 61222 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-06-21 15:38:33.275  INFO [users-ws,,,] 61222 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-06-21 15:38:33.281  INFO [users-ws,,,] 61222 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:23c7e535-0a56-43ac-9a98-16502882902d'
+2020-06-21 15:38:33.769  WARN [users-ws,,,] 61222 --- [main] o.s.c.s.zipkin2.ZipkinAutoConfiguration  : Check result of the [org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@57920d6c] contains an error [CheckResult{ok=false, error=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)}]
+2020-06-21 15:38:34.584  INFO [users-ws,,,] 61222 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-21 15:38:34.674  INFO [users-ws,,,] 61222 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-06-21 15:38:34.746  INFO [users-ws,,,] 61222 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-06-21 15:38:34.831  WARN [users-ws,,,] 61222 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-06-21 15:38:34.898  INFO [users-ws,,,] 61222 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-06-21 15:38:34.950  INFO [users-ws,,,] 61222 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-06-21 15:38:35.046  INFO [users-ws,,,] 61222 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-06-21 15:38:35.929  INFO [users-ws,,,] 61222 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-06-21 15:38:35.936  INFO [users-ws,,,] 61222 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-06-21 15:38:36.194  INFO [users-ws,,,] 61222 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-06-21 15:40:19.119  INFO [users-ws,,,] 61222 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3083e6ef, org.springframework.security.web.context.SecurityContextPersistenceFilter@18ffc008, org.springframework.security.web.header.HeaderWriterFilter@23ee70a7, org.springframework.security.web.authentication.logout.LogoutFilter@6018d82c, com.pratyushapps.userservice.security.AuthenticationFilter@6d57b264, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d7f9b33, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20923380, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@782ed745, org.springframework.security.web.session.SessionManagementFilter@7804a783, org.springframework.security.web.access.ExceptionTranslationFilter@24a1858a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@227fc322]
+2020-06-21 15:40:19.170  WARN [users-ws,,,] 61222 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-06-21 15:40:19.171  INFO [users-ws,,,] 61222 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-06-21 15:40:20.505  WARN [users-ws,,,] 61222 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-06-21 15:40:20.748  INFO [users-ws,,,] 61222 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2020-06-21 15:40:20.901  INFO [users-ws,,,] 61222 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 39497 (http) with context path ''
+2020-06-21 15:40:20.902  INFO [users-ws,,,] 61222 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 39497
+2020-06-21 15:40:20.912  INFO [users-ws,,,] 61222 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-06-21 15:40:20.958  INFO [users-ws,,,] 61222 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-06-21 15:40:21.138  INFO [users-ws,,,] 61222 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-06-21 15:40:21.138  INFO [users-ws,,,] 61222 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-06-21 15:40:21.318  INFO [users-ws,,,] 61222 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-06-21 15:40:21.319  INFO [users-ws,,,] 61222 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-06-21 15:40:21.545  INFO [users-ws,,,] 61222 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 15:40:21.566  INFO [users-ws,,,] 61222 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-06-21 15:40:21.567  INFO [users-ws,,,] 61222 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-06-21 15:40:21.567  INFO [users-ws,,,] 61222 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-06-21 15:40:21.567  INFO [users-ws,,,] 61222 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-06-21 15:40:21.567  INFO [users-ws,,,] 61222 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-06-21 15:40:21.567  INFO [users-ws,,,] 61222 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-06-21 15:40:21.567  INFO [users-ws,,,] 61222 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-06-21 15:40:21.807  INFO [users-ws,,,] 61222 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-06-21 15:40:21.810  INFO [users-ws,,,] 61222 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-06-21 15:40:21.813  INFO [users-ws,,,] 61222 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-06-21 15:40:21.819  INFO [users-ws,,,] 61222 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1592734221817 with initial instances count: 1
+2020-06-21 15:40:21.828  INFO [users-ws,,,] 61222 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application USERS-WS with eureka with status UP
+2020-06-21 15:40:21.828  INFO [users-ws,,,] 61222 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1592734221828, current=UP, previous=STARTING]
+2020-06-21 15:40:21.831  INFO [users-ws,,,] 61222 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:91c8c4f4c32c5e171c8b123a29d81e27: registering service...
+2020-06-21 15:40:21.867  INFO [users-ws,,,] 61222 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_USERS-WS/users-ws:91c8c4f4c32c5e171c8b123a29d81e27 - registration status: 204
+2020-06-21 15:40:21.887  INFO [users-ws,,,] 61222 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-06-21 15:40:21.888  INFO [users-ws,,,] 61222 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-06-21 15:40:21.913  INFO [users-ws,,,] 61222 --- [main] c.p.userservice.UserserviceApplication   : Started UserserviceApplication in 122.131 seconds (JVM running for 123.932)
+2020-06-21 15:40:57.520  INFO [users-ws,,,] 61222 --- [http-nio-auto-1-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-06-21 15:40:57.520  INFO [users-ws,,,] 61222 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-06-21 15:40:57.536  INFO [users-ws,,,] 61222 --- [http-nio-auto-1-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-06-21 15:40:58.607  WARN [users-ws,,,] 61222 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@57920d6c}] z.r.AsyncReporter$BoundedAsyncReporter   : Spans were dropped due to exceptions. All subsequent errors will be logged at FINE level.
+2020-06-21 15:40:58.621  WARN [users-ws,,,] 61222 --- [AsyncReporter{org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender@57920d6c}] z.r.AsyncReporter$BoundedAsyncReporter   : Dropped 1 spans due to ResourceAccessException(I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused))
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:9411/api/v2/spans": Connection refused (Connection refused); nested exception is java.net.ConnectException: Connection refused (Connection refused)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:748) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.ZipkinRestTemplateWrapper.doExecute(ZipkinRestTemplateSenderConfiguration.java:228) ~[spring-cloud-sleuth-zipkin-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:641) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender.post(RestTemplateSender.java:129) ~[spring-cloud-sleuth-zipkin-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:142) ~[spring-cloud-sleuth-zipkin-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at org.springframework.cloud.sleuth.zipkin2.sender.RestTemplateSender$HttpPostCall.doExecute(RestTemplateSender.java:132) ~[spring-cloud-sleuth-zipkin-2.2.3.RELEASE.jar:2.2.3.RELEASE]
+	at zipkin2.Call$Base.execute(Call.java:380) ~[zipkin-2.21.1.jar:na]
+	at zipkin2.reporter.AsyncReporter$BoundedAsyncReporter.flush(AsyncReporter.java:299) ~[zipkin-reporter-2.15.0.jar:na]
+	at zipkin2.reporter.AsyncReporter$Flusher.run(AsyncReporter.java:378) [zipkin-reporter-2.15.0.jar:na]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_252]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[na:1.8.0_252]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[na:1.8.0_252]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[na:1.8.0_252]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[na:1.8.0_252]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[na:1.8.0_252]
+	at java.net.Socket.connect(Socket.java:607) ~[na:1.8.0_252]
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175) ~[na:1.8.0_252]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463) ~[na:1.8.0_252]
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558) ~[na:1.8.0_252]
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242) ~[na:1.8.0_252]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339) ~[na:1.8.0_252]
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357) ~[na:1.8.0_252]
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1226) ~[na:1.8.0_252]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1162) ~[na:1.8.0_252]
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1056) ~[na:1.8.0_252]
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:990) ~[na:1.8.0_252]
+	at org.springframework.http.client.SimpleBufferingClientHttpRequest.executeInternal(SimpleBufferingClientHttpRequest.java:76) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:53) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:739) ~[spring-web-5.2.6.RELEASE.jar:5.2.6.RELEASE]
+	... 9 common frames omitted
+
+2020-06-21 15:45:21.571  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 15:50:21.573  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 15:55:21.574  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 16:00:21.576  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 16:05:21.578  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 16:10:21.580  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 16:15:21.582  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 16:20:21.584  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 16:25:21.586  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 16:30:21.587  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 16:35:21.589  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 16:40:21.590  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 16:45:21.593  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 16:50:21.594  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 16:55:21.596  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 17:00:21.598  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 17:05:21.600  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 17:10:21.601  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 17:15:21.603  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 17:20:21.605  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 17:25:21.606  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 17:30:21.608  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 17:35:21.610  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 17:40:21.612  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 17:45:21.613  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 17:50:21.614  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 17:55:21.617  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 18:00:21.619  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-06-21 20:18:56.338  INFO [users-ws,,,] 61222 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
